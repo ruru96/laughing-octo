@@ -1,0 +1,40 @@
+body {background-color: blanchedalmond;text-align: center;
+      }
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+  }
+  p {
+    color: red;
+  }
+  ul {
+    list-style-position: inside;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    width: 400px;}
+
+    h3 {
+        animation-duration: 8s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes slidein {        
+      0% {
+        margin-left: 0%;
+      }
+      50% {
+        margin-left: 300px;
+      }
+      100% {
+        margin-left: 0%;
+      }
+    }
+
+/* Total duration of the animation is 8 seconds (line 2).
+Animation being used is “slidein” (line 3).
+Animation is on an infinite loop (line 4).
+“Slidein” begins on the left hand side of the page (line 9).
+At half the duration, the title is 300px off the left side of the page (line 12).
+At the end of the animation, the text is back on the left hand side of the page (line 15).
